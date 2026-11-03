@@ -6,7 +6,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,          // blokuje test.only na CI
   retries: process.env.CI ? 2 : 0,       // ponowne próby tylko na CI
   workers: process.env.CI ? 2 : undefined,
-  reporter: [['html', { open: 'never' }], ['list']],
+  reporter: [['list'], ['html', { open: 'never' }], ['allure-playwright']],
   use: {
     baseURL: 'https://www.saucedemo.com',
     testIdAttribute: 'data-test',        // saucedemo używa data-test zamiast data-testid
