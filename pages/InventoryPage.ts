@@ -5,12 +5,16 @@ export class InventoryPage {
   readonly title: Locator;
   readonly cartLink: Locator;
   readonly cartBadge: Locator;
+  readonly itemName: Locator;
+  readonly checkoutButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.title = page.getByTestId('title');
     this.cartLink = page.getByTestId('shopping-cart-link');
     this.cartBadge = page.getByTestId('shopping-cart-badge');
+    this.itemName = page.getByTestId('inventory-item-name');
+    this.checkoutButton = page.getByTestId('checkout');
   }
 
   async addToCart(productId: string) {

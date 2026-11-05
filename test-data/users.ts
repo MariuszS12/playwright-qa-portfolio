@@ -8,4 +8,10 @@ export const users = {
 export const products = {
   backpack: { name: 'Sauce Labs Backpack', id: 'sauce-labs-backpack' },
   bikeLight: { name: 'Sauce Labs Bike Light', id: 'sauce-labs-bike-light' },
+  tShirt: { name: 'Sauce Labs Bolt T-Shirt', id: 'sauce-labs-bolt-t-shirt' },
 };
+
+export const checkoutdates = {
+  first: { firstname: 'Tadeusz', lastname: 'Grad', postalcode: '42-200' },
+};
+
